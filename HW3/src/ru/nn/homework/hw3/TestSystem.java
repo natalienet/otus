@@ -27,9 +27,22 @@ public class TestSystem {
                 System.out.println(j + ". " + questionsAndAnswerOptions[i][j]);
             }
 
-            // Считываем ответ
-            System.out.print("Ваш ответ: ");
-            int userAnswer = scanner.nextInt();
+            // Считываем ответ и проверяем его корректность
+            int userAnswer = 0;
+            while (true) {
+                System.out.print("Ваш ответ: ");
+                if (scanner.hasNextInt()) {
+                    userAnswer = scanner.nextInt();
+                } else {
+                    scanner.next();
+                }
+
+                if (userAnswer < 1 || userAnswer > questionsAndAnswerOptions[i].length - 1) {
+                    System.out.println("Некорректное значение. Введите число от 1 до " + (questionsAndAnswerOptions[i].length - 1));
+                } else {
+                    break;
+                }
+            }
 
             // Проверяем ответ и выводим результат,
             // а также увеличиваем счетчики правильных и неправильных ответов
