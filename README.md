@@ -1,1 +1,1 @@
-# otus
+# Домашние работы по курсу "Java Developer. Basic"
