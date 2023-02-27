@@ -23,4 +23,9 @@ public class Account {
         Account otherAccount = (Account) other;
         return Objects.equals(number, otherAccount.number);
     }
+
+    @Override
+    public int hashCode() {
+        return number;
+    }
 }
