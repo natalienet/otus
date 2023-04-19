@@ -1,0 +1,78 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Домашнее задание № 10</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<h2>Форма добавления информации о студенте</h2>
+	<form>
+		<fieldset class = "data-fieldset">
+			<div>
+				<label for = "fioTextBox">Имя студента:</label>
+				<input id = "fioTextBox" name = "fio" type = "text">
+			</div>
+			<div>
+				<label for = "datePicker">Дата рождения:</label>
+				<input id = "datePicker" name = "birthday" type = "date" min = "1900-01-01" max = "2013-12-31">
+			</div>
+			<div>
+				<label for = "sexSelect">Пол:</label>
+				<select id = "sexSelect" name = "sex">
+					<option value = "1" selected>мужчина</option>
+					<option value = "2">женщина</option>
+				</select>
+			</div>
+		</fieldset>
+		
+		<fieldset class = "button-fieldset">
+			<input type="button" name = "add" value = "Добавить" onclick = "onAddClick()">
+		</fieldset>
+	</form>
+	
+	<h2>Таблица студентов</h2>
+	<table class = "students-tab" id = "studentsTab">
+		<thead>
+			<tr>
+				<td class="students-tab-col1">Имя студента</td>
+                <td class="students-tab-col2">Пол</td>
+                <td class="students-tab-col3">Дата рождения</td>
+                <td class="students-tab-col4">Возраст</td>
+			</tr>
+		</thead>
+		<tbody>
+            <tr>
+                <td>Иван Ограномович Штейн</td>
+                <td>мужчина</td>
+                <td>12.06.1974</td>
+                <td>46</td>
+            </tr>
+            <tr>
+                <td>Гертруда Анатольевна Иванова</td>
+                <td>женщина</td>
+                <td>01.01.1987</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>Воланд Игоревич Муха</td>
+                <td>мужчина</td>
+                <td>27.04.1974</td>
+                <td>47</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">&nbsp;</td>
+            </tr> <tr>
+                <td colspan="3">Средний возраст студентов</td>
+                <td id = "averageAge">42</td>
+            </tr>
+        </tfoot>
+	</table>
+	
+</body>
+
+</html>

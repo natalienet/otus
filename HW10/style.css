@@ -1,0 +1,62 @@
+form {
+	border: 1px solid steelblue;
+	width: 600px;
+	margin: 0px;
+	font-size: 20px;	  
+}
+
+.data-fieldset {
+	border: 0;
+	margin: 5px 0 5px 0;
+}
+
+.data-fieldset label {
+	width: 250px;
+	display: inline-block;
+	margin: 0;
+}
+
+.data-fieldset input, select {
+	border: 1px solid steelblue;
+	margin: 5px 0 5px 0;
+	width: 300px;
+	height: 30px;
+	font-size: 18px;
+}
+
+.button-fieldset {
+	border: 0;
+	margin: 0;
+}
+
+.button-fieldset input {
+	font-size: 18px;
+}
+
+.students-tab {
+	border: 1px solid steelblue;
+	width: 750px;
+	border-collapse: collapse;
+	margin-bottom: 300px;
+	font-size: 20px;
+}
+
+.students-tab tr td {
+	border: 1px solid steelblue;
+}
+
+.students-tab-col1 {
+	width: 300px;
+}
+
+.students-tab-col2 {
+	width: 120px;
+}
+
+.students-tab-col3 {
+	width: 150px;
+}
+
+.students-tab-col4 {
+	width: 80px;
+}
